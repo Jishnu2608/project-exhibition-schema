@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { useProjectsValue, useSelectedProjectValue } from '../context';
+import { useSelectedProjectValue, useProjectsValue } from '../context';
+import { IndividualProject } from './IndividualProject';
 
 
 export const Projects = ({activeValue = null}) => {
     const [active, setActive] = useState(activeValue);
-    const {setSelectedproject} = useSelectedProjectValue();
+    const {setSelectedProject} = useSelectedProjectValue();
     const {projects} = useProjectsValue();
 
     return (
@@ -20,14 +21,14 @@ export const Projects = ({activeValue = null}) => {
             }
             onKeyDown={() => {
                 setActive(project.projectId);
-                setSelectedproject(project.projectId);
+                setSelectedProject(project.projectId);
             }}
             onClick={() => {
                 setActive(project.projectId);
-                setSelectedproject(project.projectId);
+                setSelectedProject(project.projectId);
             }}
             >
-                {('Project', JSON.stringify(project))}
+                <IndividualProject project={project} />
             </li>
         ))
     );

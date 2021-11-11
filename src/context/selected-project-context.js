@@ -1,4 +1,4 @@
-import react , {createContext, useContext, useState} from "react";
+import React , {createContext, useContext, useState} from "react";
 
 export const SelectedProjectContext = createContext();
 export const SelectedProjectProvider = ({children}) => {
