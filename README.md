@@ -4,7 +4,7 @@ Schema is a web-based to-do list app which will operate across all devices. 📱
 
 
 
-## Tech 
+## Tech 🚀
 
 - HTML
 - SCSS
@@ -15,7 +15,7 @@ Schema is a web-based to-do list app which will operate across all devices. 📱
 
 
   
-## Team Members
+## Team Members 👥
 
 - [Jishnudeep Borah](https://github.com/Jishnu2608)
 - [Akriti Bhardwaj](https://github.com/akriti19)
